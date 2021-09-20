@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Product from "./Product";
 
 function Home() {
   return (
@@ -12,15 +13,47 @@ function Home() {
         />
 
         <div className="home__row">
-          {/*  */}
-          {/*  */}
+          <Product
+            title="Lean Startup"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />
+          <Product
+            title="Lean Startup"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />
         </div>
         <div className="home__row">
-          {/*  */}
-          {/*  */}
-          {/*  */}
+          <Product
+            title="Lean Startup"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />{" "}
+          <Product
+            title="Lean Startup"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />{" "}
+          <Product
+            title="Lean Startup"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />
         </div>
-        <div className="home__row">{/*  */}</div>
+        <div className="home__row">
+          <Product
+            title="Lean Startup"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />
+        </div>
       </div>
     </div>
   );
