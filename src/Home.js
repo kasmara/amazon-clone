@@ -14,33 +14,15 @@ function Home() {
 
         <div className="home__row">
           <Product
-            title="Lean Startup"
+            id={1}
+            title="Lean Startup 1"
             price={29.99}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={3}
           />
           <Product
-            title="Lean Startup"
-            price={29.99}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
-            rating={3}
-          />
-        </div>
-        <div className="home__row">
-          <Product
-            title="Lean Startup"
-            price={29.99}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
-            rating={3}
-          />{" "}
-          <Product
-            title="Lean Startup"
-            price={29.99}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
-            rating={3}
-          />{" "}
-          <Product
-            title="Lean Startup"
+            id={2}
+            title="Lean Startup 2"
             price={29.99}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={3}
@@ -48,7 +30,31 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
-            title="Lean Startup"
+            id={3}
+            title="Lean Startup 3"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />{" "}
+          <Product
+            id={4}
+            title="Lean Startup 4"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />{" "}
+          <Product
+            id={5}
+            title="Lean Startup 5"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            rating={3}
+          />
+        </div>
+        <div className="home__row">
+          <Product
+            id={6}
+            title="Lean Startup 6"
             price={29.99}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={3}
