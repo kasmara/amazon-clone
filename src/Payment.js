@@ -7,6 +7,8 @@ import CheckoutProduct from "./CheckoutProduct";
 import "./Payment.css";
 import { getBasketTotal } from "./reducer";
 import { useStateValue } from "./StateProvider";
+import { db } from "./firebase.js";
+import { collection, doc, setDoc } from "firebase/firestore";
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -42,9 +44,19 @@ function Payment() {
       })
       .then(({ paymentIntent }) => {
         // paymentIntent is the payment confirmation
+        setDoc(doc(db, "users", user?.uid, "orders", paymentIntent.id), {
+          basket: basket,
+          amount: paymentIntent.amount,
+          created: paymentIntent.created,
+        });
+
         setSucceeded(true);
         setError(null);
         setProcessing(false);
+
+        dispatch({
+          type: "EMPTY_BASKET",
+        });
         history.replace("/orders");
       });
   };
